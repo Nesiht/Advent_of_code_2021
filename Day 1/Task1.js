@@ -14,11 +14,11 @@ const addDepthToArray = (data) => {
   }
 }
 
-// Compare each numbeer in depthValues array with the next integer
+// Compare each integer in depthValues array with the next integer
 const compareDepths = (data) => {
   let depthIncrement = 0
   for (let i = 0; i < data.length; i++) {
-    // Compare each value with the next value
+    // Increment if i is less then i+1
     if (data[i] < data[i + 1]) {
       depthIncrement += 1
     }
